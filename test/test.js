@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
 const { assert } = require('chai');
@@ -21,5 +22,9 @@ describe('returns factorial of a number', () => {
   });
   it('factorial(5) = 8', () => {
     assert.equal(factorial(5), 120);
+  });
+  it('factorial(9) = 362,880', () => {
+    assert.equal(factorial(9), 362880);
+    console.log('----------------------');
   });
 });
